@@ -1,0 +1,25 @@
+{
+  "name": "testCookies",
+  "version": "1.0.0",
+  "description": "test cookies",
+  "main": "index.js",
+  "author": "shjang<cbiscuit@naver.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "graphql-request": "^1.8.2",
+    "graphql-tools": "^4.0.5",
+    "mongoose": "^5.7.4",
+    "request": "^2.88.0"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node ./server/index.js"
+  }
+}

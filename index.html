@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/hello" method="POST">
+        <table>
+            <tr>
+                <td><label for="id-box">아이디</label></td>
+                <td><input id="id-box" type="text" placeholder="아이디" name="login-id"></td>
+            </tr>
+            <tr>
+                <td><label for="pwd-box">비밀번호</label></td>
+                <td><input id="pwd-box" type="password" placeholder="비밀번호" name="login-pwd"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="로그인"></td>
+                <td><input id="m-join" type="button" value="회원가입"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        const mJoin = document.querySelector("#m-join");
+        mJoin.addEventListener("click", handleMemberJoin);
+        function handleMemberJoin(e) {
+            location.href = './login/memberJoin.html';
+        }
+    </script>
+</body>
+
+</html>
