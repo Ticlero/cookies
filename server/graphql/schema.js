@@ -5,7 +5,7 @@ const typeDefs = `
     type Query{
         hello: String!,
         allUser: [User],
-        getByIdUser: User,
+        getByIdUser(_userID: String!): User,
     }
 
     type User{

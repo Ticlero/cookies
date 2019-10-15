@@ -7,6 +7,9 @@ export const resolvers ={
         },
         allUser: async () => {
             return await User.find();
+        },
+        getByIdUser: async (_,{_userID}) =>{
+            return await User.findOne({_userID:_userID});
         }
     },
 
